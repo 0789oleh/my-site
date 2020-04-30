@@ -13,8 +13,8 @@ body {
   font-size: 25px;
 }
 img{
-	width: 100%;
-	max-with: 600;
+	max-width: 100%;
+	with: 600;
 }
 
 .marks{
