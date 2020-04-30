@@ -12,6 +12,10 @@ body {
   color: black;
   font-size: 25px;
 }
+img{
+	width: 100%;
+	max-with: 600;
+}
 
 .marks{
 	border-width: 2px;
