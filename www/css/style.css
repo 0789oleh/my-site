@@ -17,6 +17,10 @@ img{
 	with: 600;
 }
 
+table {
+	max-widht: 100%;
+}
+
 .marks{
 	border-width: 2px;
 	border-color: #808080;
