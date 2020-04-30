@@ -16,6 +16,7 @@ body {
 .marks{
 	border-width: 2px;
 	border-color: #808080;
+	cellspacing="1";
 }
 .citation
 {
