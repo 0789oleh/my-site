@@ -1,31 +1,9 @@
 
-h3{
-	background-color:white;
-	margin: 0px 1000px 0px;
-	color:orange;
-	font-size:25px
-}
-
-body {
-  padding: 25px;
-  background-color: white;
-  color: black;
-  font-size: 25px;
-}
-img{
-	max-width: 100%;
-	with: 600;
-}
-
-table {
-	max-widht: 100%;
-}
-
-.marks{
-	border-width: 2px;
-	border-color: #808080;
-	cellspacing="1";
-}
+h3{ background-color:white; text-align: center; color:orange;font-size:25px;}
+body {  padding: 25px;  background-color: white; color: black; font-size: 25px;}
+img{max-width: 100%; with: 600;}
+table {	max-widht: 100%;}
+.marks{	border-width: 2px; border-color: #808080; cellspacing="1";}
 .citation
 {
 	background-color: grey;
