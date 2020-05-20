@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The digital ortodontics project</title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/style.css">
+</head>
+    <body>
+        <header>
+
+            <img src="img/index.jpg" >
+            <h2>The digital ortodontics project</h2>
+        </header>
+        <h3>Our mission</h3>
+        <p>The project is working on making recomendations for ortodontic treatment with preliminary estimate. We are considered on providing the oportunity of treatment with higher quality without using the expensive software packages.</p>
+        <h3>Why digital ortodonty is so important?</h3>
+        <p>
+            The study made by Ukrainian Medical Stomatological Academy in 2012 <a href ="https://cyberleninka.ru/article/n/rasprostranennost-zubochelyustnyh-anomaliy-u-vzroslyh-i-dolya-asimmetrichnyh-form-sredi-nih/viewer">showed</a> that only about 18% of people have healthy occlusion. Malocclusion makes the quality of life much lower. Frequent pains, speech disorders, problems chewing food just are the icing of the cake. Malocclusion could bring on an abrasion, cavity due to the overlapping teeth. Because of malocclusion, certain patients develop the habit of breathing through their mouths. This can lead to snoring. Furthermore, mouth breathing promotes a proliferation of bacteria in the mouth, increasing the risk of gum disease.
+        </p>
+        <p> 
+        That is why ortodontic treatment is important in modern world. Now ortodontists make the plan of treatment only on their experience on conferences. The result of tratment can be unpredictable in some cases. Another way &#8212; using computer technology and mathematical modelling. But not all clinics (espetially municipal dental offices and clinics from poor countries) could allow them to use spetialized software packages. Our goal is providing the digital ortodonty based on general purpose CAD and CAE systems.</p>
+         <h1>Our team</h1>
+            <div class="conteiner-fluid">
+        <div class="row">
+        <div class="col bg-light">
+            <figure>
+                <img src="img/Anna.jpg" class="rounded-circle" id="avatar">
+                <figcaption> Anna Perepelitsa </figcaption>
+            </figure>
+        </div>
+        <div class="col bg-light">
+            <figure>
+                <img src="img/Laura.jpg" class="rounded-circle" id="avatar">
+                <figcaption>Laura Anico</figcaption>
+            </figure>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col bg-light">
+            <figure>
+                <img src="img/Yana.jpg" class="rounded-circle" id="avatar">
+                <figcaption>Yana Solomonova</figcaption>
+            </figure>
+        </div>
+        <div class="col bg-light">
+            <figure>
+                <img src="img/Oleh.jpg" class="rounded-circle" id="avatar">
+                <figcaption>Oleh Zraichenko</figcaption>
+            </figure>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col bg-light">
+            <figure>
+                <img src="img/Tatjana.jpg" class="rounded-circle" id="avatar">
+                <figcaption>Tatjana Vyatkina</figcaption>
+            </figure>
+        </div>
+        <div class="col bg-light">
+            <figure>
+                <img src="img/Nikita.jpg" class="rounded-circle" id="avatar">
+                <figcaption>Nikita Proskurin</figcaption>
+            </figure>
+        </div>
+        </div></div>
+        <h1> Our mentors</h1>
+        <div class="conteiner-fluid"></div>
+        <div class="row">
+        <div class="col bg-light">
+            <figure>
+                <img src="img/no_avatar_woman.jpg" class="rounded-circle" id="avatar">
+                <figcaption>Olena Tishkovec</figcaption>
+            </figure>
+        </div>
+        <div class="col bg-light">
+            <figure>
+                <img src="img/Elena.jpg" class="rounded-circle" id="avatar">
+                <figcaption>Olena Rosova</figcaption>
+            </figure>
+        </div>
+        </div></div>
+
+        <canvas class='canvas-container'></canvas>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js"></script>
+        <script src="scripts/STLLoader.js"></script>
+        <script src="scripts/main.js"></script>
+        <script src="scripts/modernizr.min.js"></script>
+
+        <script>
+            Modernizr.load(
+                {
+                    test : Modernizr.webgl,
+                    yep : [
+                        'http://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js',
+                        'scripts/STLLoader.js', // https://github.com/mrdoob/three.js/blob/fe8493157ef76/examples/js/loaders/STLLoader.js
+                        'scripts/main.js'
+                    ],
+                    complete : function () {
+                        init( './models/teeth1.stl' );
+                        animate();
+                    }
+                }
+            );
+        </script>
+    </body>
+</html>
