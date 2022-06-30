@@ -10,7 +10,6 @@ function App() {
           <tr><th>Produced</th><th>1999</th></tr>
           <tr><th>Date of death</th><tr>Still alive</tr></tr>
           <tr><th>Alma mater</th><th>Kharkiv Polytechnical Institute</th></tr>
-
         </table>
         <button> Something more about education</button>
         <button> About iternships</button>
